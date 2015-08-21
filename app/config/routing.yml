@@ -1,0 +1,11 @@
+tanna_product_bundle_routing:
+    resource: "@TannaProductBundle/Resources/config/routing.yml"
+    prefix:   /tanna
+
+fos_user_bundle_routing:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"
+    prefix:   /user
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
