@@ -224,12 +224,6 @@
    <arg value="--configuration"/>
    <arg path="${basedir}/app/build/phpunit.xml"/>
   </exec>
- <logging>
-     <log type="coverage-html" target="build/coverage"/>
-     <log type="coverage-clover" target="build/logs/clover.xml"/>
-     <log type="coverage-crap4j" target="build/logs/crap4j.xml"/>
-     <log type="junit" target="build/logs/junit.xml" logIncompleteSkipped="false"/>
- </logging>
   <property name="phpunit.done" value="true"/>
  </target>
 
