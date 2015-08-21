@@ -23,10 +23,11 @@
 
 
     <logging>
-        <log type="coverage-html" target="${basedir}/app/build/coverage"/>
-        <log type="coverage-clover" target="${basedir}/app/build/logs/clover.xml"/>
-        <log type="coverage-crap4j" target="${basedir}/app/build/logs/crap4j.xml"/>
-        <log type="coverage-xml" target="${basedir}/app/build/logs/coverage"/>
+        <log type="coverage-html" target="coverage"/>
+        <log type="coverage-clover" target="logs/clover.xml"/>
+        <log type="coverage-crap4j" target="logs/crap4j.xml"/>
+        <log type="coverage-xml" target="logs/coverage"/>
+        <log type="junit" target="logs/junit.xml"/>
     </logging>
 
     <filter>
