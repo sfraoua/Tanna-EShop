@@ -27,7 +27,6 @@
         <log type="coverage-clover" target="${basedir}/app/build/logs/clover.xml"/>
         <log type="coverage-crap4j" target="${basedir}/app/build/logs/crap4j.xml"/>
         <log type="coverage-xml" target="${basedir}/app/build/logs/coverage"/>
-        <log type="junit" target="${basedir}/app/build/logs/junit.xml"/>
     </logging>
 
     <filter>
