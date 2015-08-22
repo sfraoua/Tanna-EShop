@@ -23,7 +23,7 @@
         "doctrine/mongodb-odm": "1.0.*@dev",
         "doctrine/mongodb-odm-bundle": "3.0.*@dev",
         "tanna/product-bundle": "dev-master",
-        "friendsofsymfony/user-bundle": "2.0.x-dev",
+        "friendsofsymfony/user-bundle": "2.0.x-dev"
     },
     "require-dev": {
         "sensio/generator-bundle": "~2.3"
