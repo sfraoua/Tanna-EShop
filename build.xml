@@ -8,6 +8,7 @@
  <property name="phploc"  value="phploc"/>
  <property name="phpmd"   value="phpmd"/>
  <property name="phpunit" value="phpunit"/>
+ <property name="composer" value="composer"/>
 
  <!-- Use this when the tools are located as PHARs in ${basedir}/app/build/tools
  <property name="pdepend" value="${basedir}/app/build/tools/pdepend.phar"/>
@@ -42,6 +43,17 @@
  <target name="static-analysis"
          depends="lint,phploc-ci,pdepend,phpmd-ci,phpcs-ci,phpcpd-ci"
          description="Performs static analysis" />
+
+ <target name="composer" description="Installing composer dependencies">
+    <exec executable="composer" failonerror="true">
+        <arg value="install" />
+        <arg value="--dev" />
+        <arg value="--prefer-dist" />
+        <arg value="--no-progress" />
+
+        <env key="SYMFONY_ENV" value="test"/>
+    </exec>
+</target>
 
  <!-- Adjust the threadCount attribute's value to the number of CPUs -->
  <target name="static-analysis-parallel"
